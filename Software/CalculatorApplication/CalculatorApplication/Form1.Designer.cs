@@ -1,6 +1,6 @@
 ﻿namespace CalculatorApplication
 {
-    partial class Form1
+    partial class FrmCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnClick = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnClick
+            // 
+            this.btnClick.Location = new System.Drawing.Point(142, 81);
+            this.btnClick.Name = "btnClick";
+            this.btnClick.Size = new System.Drawing.Size(75, 23);
+            this.btnClick.TabIndex = 0;
+            this.btnClick.Text = "Klikni";
+            this.btnClick.UseVisualStyleBackColor = true;
+            // 
+            // FrmCalculator
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(383, 234);
+            this.Controls.Add(this.btnClick);
+            this.Name = "FrmCalculator";
+            this.Text = "Calculator";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnClick;
     }
 }
 
