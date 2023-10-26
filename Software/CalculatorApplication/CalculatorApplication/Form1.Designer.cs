@@ -39,6 +39,7 @@
             this.btnClick.TabIndex = 0;
             this.btnClick.Text = "Klikni";
             this.btnClick.UseVisualStyleBackColor = true;
+            this.btnClick.Click += new System.EventHandler(this.btnClick_Click);
             // 
             // FrmCalculator
             // 
